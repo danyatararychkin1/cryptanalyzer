@@ -58,4 +58,12 @@ public class Cipher {
 
         return -1;
     }
+
+    public String decrypt(String text, int key) {
+        return process(text, -key);
+    }
+
+    public static int getAlphabetSize() {
+        return ALPHABET.length;
+    }
 }
